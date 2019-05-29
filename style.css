@@ -90,8 +90,38 @@ html{
   
 }
 
+.grid{
+  list-style: none;
+  display: flex;
+  margin-left: 15px;
+  align-content: center;
+  justify-content: center;
+  padding: none;
+}
 .grid1{
-  padding: 200px;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  width: 510px;
+  height: 500px;
+}
+
+.grid2{
+  list-style: none;
+
+  width: 710px;
+  height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+}
+.grid-item{
+padding: 2px;
 }
 
 .bot{
