@@ -24,7 +24,6 @@ html{
 }
 .head-separator{
   margin-left: auto;
-  margin-right: auto;
 }
 
 .top{
@@ -56,7 +55,10 @@ html{
   color: black;
   padding: 25px;
   height: 5px;
-
+  border-bottom: 5px solid white; 
+  /* ^ pra não causar o efeito de sobe e desce */
+  cursor: pointer;
+  /* bom usar pra links (muda o pointeiro pra mãozinha de link) */
 }
 
 .navbar-item:hover{
@@ -87,17 +89,22 @@ html{
   border-radius:15px; 
   border-radius:15px; 
   border-radius:15px; 
-  
+  border: 1px solid lightgray;
+  /* coloca ou tira boder pra tirar aquela borda feia padrao de html */
+}
+
+.search:focus {
+  outline: none;
+  /* tirar outline enquanto vc esta focado no input */
 }
 
 .grid{
   list-style: none;
   display: flex;
   margin-left: 15px;
-  align-content: center;
   justify-content: center;
-  padding: none;
 }
+
 .grid1{
   list-style: none;
   display: flex;
@@ -109,19 +116,16 @@ html{
 
 .grid2{
   list-style: none;
-
   width: 710px;
   height: 500px;
   display: flex;
-  align-content: center;
   justify-content: flex-end;
   flex-wrap: wrap;
   flex-direction: row;
-
-
 }
+
 .grid-item{
-padding: 2px;
+  padding: 2px;
 }
 
 .bot{
@@ -145,13 +149,13 @@ padding: 2px;
   border-bottom: 1px solid rgb(153, 151, 151);
   justify-content: flex-start;
   border-left: 5px solid rgb(219, 27, 178);
-  
 }
 
 .botnav3{
   display: flex;
   width: 50px;
 }
+
 .botnav2{
   display: flex;
   flex-basis: 500px;
@@ -160,11 +164,11 @@ padding: 2px;
   border-left: 5px solid black;
   justify-content: flex-start;
   align-items: center;
-
   border-top: 1px solid rgb(153, 151, 151);
   border-right: 1px solid rgb(153, 151, 151);
   border-bottom: 1px solid rgb(153, 151, 151);
 }
+
 .botnav-item{
   list-style: none;
   padding: 5px;
@@ -172,23 +176,25 @@ padding: 2px;
   color: rgb(92, 92, 92);
   font-size: 15px;
 }
+
 .botnav-item2{
   color: black;
   font-weight: bold;
   font-size: 20px;
   text-align: initial;
 }
+
 .botnav-item:nth-child(1) {
   color: rgb(219, 27, 178);
   font-weight: bold;
   font-size: 20px;
   margin-right: 10px;
-
 }
+
 .botnav-item:nth-child(8) {
   color: rgb(170, 169, 169);
 }
+
 .botnav-separator{
   margin-left: auto;
-  margin-right: auto;
 }
